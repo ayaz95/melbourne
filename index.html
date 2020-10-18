@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<div style="background-color: #333;
+				overflow: hidden; text-align: center;">
+					<h1 style="color:whitesmoke;">Melbourne Datathon - 2020 <h1>
+					<h4 style="color:whitesmoke; font-family: Verdana, Geneva, Tahoma, sans-serif;"><centre>This is a submission for Melbourne Datathon 2020 Insights category.</centre></h4>
+				  </div>
+
+
+
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Electricity Demand Analysis: Insights into Unmapped Factors for Reliable Forecast during Uncertainty</h1>
+							<p class="major">Let’s start understanding how the electricity demand has changed during the COVID period in Australia. For our analysis we have selected the top 2 COVID hotspots i.e. Victoria and NSW. Our prediction model trained from 1/1/2016 to 30/12/2019 shows that there is a modest change in the demand for electricity in Victoria and much higher change observed in NSW.</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/gerrit.jpg" alt="" />
+						</div>
+					</section>
+
+
+				<section class="wrapper style1 align-center">
+					<div class="inner">
+						<h2>Electricity Demand Analysis: Insights into Unmapped Factors for Reliable Forecast during Uncertainty</h2>
+							<p style="text-align: left;display: block;
+							margin-top: 1em;
+							margin-bottom: 1em; width: 100%;">Let’s start understanding how the electricity demand has changed during the COVID period in Australia. For our analysis we have selected the top 2 COVID hotspots i.e. Victoria and NSW. Our prediction model trained from 1/1/2016 to 30/12/2019 shows that there is a modest change in the demand for electricity in Victoria and much higher change observed in NSW. The average percentage change (predicted – actual) from March – Aug 2020 for Victoria shows a decline of 2.1% while this percentage is slightly higher for NSW region equal to 2.4%. High demand change can be attributed to stricter restrictions in NSW (reasoning). Although the percentage was expected to be significant due to shut down of the commercial and industrial activity, but much of the change seems to be offset by high residential consumption as people have started working from home. The average percentage change (predicted – actual) from March – Aug 2020 for Victoria shows a decline of 2.1% while this percentage is slightly higher for NSW region equal to 2.4%. High demand change can be attributed to stricter restrictions in NSW (reasoning). Although the percentage was expected to be significant due to shut down of the commercial and industrial activity, but much of the change seems to be offset by high residential consumption as people have started working from home.</p>
+					</div>
+					</section>
+					
+					
+
+					<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~ayaz/5.embed" height="525" width="50%" align="left"></iframe>
+
+				
+					<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~ayaz/3.embed" height="525" width="50%" align="Right"></iframe>
+						
+	
+
+
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Factors represent temporal change</h2>
+								<p style="text-align: left;display: block;
+								margin-top: 1em;
+								margin-bottom: 1em; width: 100%;">To interpret the changes in electricity demand, we start by investigating two major factors, namely social distancing and public health. In Victoria, we used Melbourne Pedestrian count data to represent social distancing while in New South Wales, the same factor is represented by Google trend data of keywords related to daily outdoor activities performed by people. The keywords we choose are; ‘Train’, ‘Event’, and ‘hotel’. For instance; the graph shows variations in time scales of different factors influencing electricity consumption during COVID -19 pandemic. It is apparent that electricity consumption started dropping almost immediately the government put COVID related restrictions in place. This is seen by people’s changing behaviour represented by their google search behaviour. Following this, the number of new confirmed cases started increasing rapidly with a major spike observed on 3 March 2020. It is also observed that electricity demand started rising almost immediately after decline in number of cases and ease of restricting.</p>
+						</div>
+						<!-- </section> -->
+					
+						<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~ayaz/1.embed" height="525" width="100%"></iframe>
+
+
+				<!-- Two -->
+				<!-- <section class="wrapper style1 align-center"> -->
+					<div class="inner">
+						<!-- <h2>Factors represent temporal change</h2> -->
+							<p style="text-align: left;display: block;
+							margin-top: 1em;
+							margin-bottom: 1em; width: 100%;">The above factors represent different temporal changes. For instance, in NSW, fig 2, electricity demand shows an early decline with respect to increase in the number of confirmed cases of COVID-19. Further, electricity demand showcased a delayed rebound in comparison to social distance measures with respect to increase in number of COVID-19 confirmed cases. Considering these features, we are aimed at quantifying this multi-dimensional relationship by modelling change (predicted - actual) in electricity demand using a Vector Autoregressive Model (VAR). 
+								Analysis of variance decomposition in VAR model indicates the percentage contribution of the above mentioned factors to change in electricity demand. In NSW, social distancing seems to account for significant proportion of the change in electricity demand during COVID months.</p>
+					</div>
+					</section>
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Impulse Response Function</h2>
+								<p style="text-align: left;display: block;
+								margin-top: 1em;
+								margin-bottom: 1em; width: 100%;">Let’s look at the impulse response function to understand the sensitivity of COVID-19 related factors to the change in electricity demand. The fluctuations in the impulse response is the representative of sensitivity to electricity change with respect to change in factors. Victoria represents that the change in electricity demand is most sensitive to change in the Melbourne pedestrian count with fluctuations in count lasting longer. Further, number of confirmed cases also does not seem to be much stronger influencing factor to the change in electricity demand.</p>
+						</div>
+						</section>
+					
+						<img src="images/vic-impulse.png" height="300" width="700" />
+
+						<img src="images/vic-impulse1.png" height="300" width="700" />
+
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+								<!-- <h2>Impulse Response Function</h2> -->
+									<p style="text-align: left;display: block;
+									margin-top: 1em;
+									margin-bottom: 1em; width: 100%;">Further, despite showing a larger contribution to the change in electricity demand during FEVD analysis, it is not necessary that the factor will provide high sensitivity in impulse response analysis. For instance, in NSW, number of confirmed seems to contribute a significant share to the change in electricity demand but shows very little sensitivity to the change in electricity demand in impulse response analysis. Thus, any measure alone cannot be used to assess the impact on change in electricity demand but both measure taken together can be used to measure the influence. </p>
+						</div>
+					</section>
+
+					<img src="images/nsw-impulse.png" height="300" width="700" />
+
+					<img src="images/nsw-impulse1.png" height="300" width="700" />
+
+
+					<!-- <section class="wrapper style1 align-center">
+						<div class="inner">
+								<p style="text-align: left;display: block;
+									margin-top: 1em;
+									margin-bottom: 1em; width: 100%;">Further, despite showing a larger contribution to the change in electricity demand during FEVD analysis, it is not necessary that the factor will provide high sensitivity in impulse response analysis. For instance, in NSW, number of confirmed seems to contribute a significant share to the change in electricity demand but shows very little sensitivity to the change in electricity demand in impulse response analysis. Thus, any measure alone cannot be used to assess the impact on change in electricity demand but both measure taken together can be used to measure the influence. </p>
+								</div>
+					</section> -->
+
+
+						<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Factors represent temporal change</h2>
+							<p>The above factors represent different temporal changes. For instance, in NSW, fig 2, electricity demand shows an early decline with respect to increase in the number of confirmed cases of COVID-19. Further, electricity demand showcased a delayed rebound in comparison to social distance measures with respect to increase in number of COVID-19 confirmed cases. Considering these features, we are aimed at quantifying this multi-dimensional relationship by modelling change (predicted - actual) in electricity demand using a Vector Autoregressive Model (VAR). 
+								Analysis of variance decomposition in VAR model indicates the percentage contribution of the above mentioned factors to change in electricity demand. In NSW, social distancing seems to account for significant proportion of the change in electricity demand during COVID months.</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+						<img src="images/vic_nsw.png" alt="" />
+						</div>
+					</section>  -->
+
+
+				
+
+				<!-- Three -->
+
+
+				<!-- <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<div class="content">
+							<h2>Tempus adipiscing</h2> 
+							<p>To interpret the changes in electricity demand, we start by investigating two major factors, namely social distancing and public health. In Victoria, we used Melbourne Pedestrian count data to represent social distancing while in New South Wales, the same factor is represented by Google trend data of keywords related to daily outdoor activities performed by people. The keywords we choose are; ‘Train’, ‘Event’, and ‘hotel’. For instance; the graph shows variations in time scales of different factors influencing electricity consumption during COVID -19 pandemic. It is apparent that electricity consumption started dropping almost immediately the government put COVID related restrictions in place. This is seen by people’s changing behaviour represented by their google search behaviour. Following this, the number of new confirmed cases started increasing rapidly with a major spike observed on 3 March 2020. It is also observed that electricity demand started rising almost immediately after decline in number of cases and ease of restricting.</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/trend.png" alt="" />
+						</div>
+					</section> -->
+
+				<!-- Four -->
+					<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Factors represent temporal change</h2>
+							<p>The above factors represent different temporal changes. For instance, in NSW, fig 2, electricity demand shows an early decline with respect to increase in the number of confirmed cases of COVID-19. Further, electricity demand showcased a delayed rebound in comparison to social distance measures with respect to increase in number of COVID-19 confirmed cases. Considering these features, we are aimed at quantifying this multi-dimensional relationship by modelling change (predicted - actual) in electricity demand using a Vector Autoregressive Model (VAR). 
+								Analysis of variance decomposition in VAR model indicates the percentage contribution of the above mentioned factors to change in electricity demand. In NSW, social distancing seems to account for significant proportion of the change in electricity demand during COVID months.    	
+								</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/trend1.png" alt="" />
+						</div>
+					</section> -->
+
+				<!-- EXTRA FIVE-->
+
+				<!-- Three -->
+				<!-- <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<div class="content">
+							<!-- <h2>Tempus adipiscing</h2> -->
+						<!--	<p>To interpret the changes in electricity demand, we start by investigating two major factors, namely social distancing and public health. In Victoria, we used Melbourne Pedestrian count data to represent social distancing while in New South Wales, the same factor is represented by Google trend data of keywords related to daily outdoor activities performed by people. The keywords we choose are; ‘Train’, ‘Event’, and ‘hotel’. For instance; the graph shows variations in time scales of different factors influencing electricity consumption during COVID -19 pandemic. It is apparent that electricity consumption started dropping almost immediately the government put COVID related restrictions in place. This is seen by people’s changing behaviour represented by their google search behaviour. Following this, the number of new confirmed cases started increasing rapidly with a major spike observed on 3 March 2020. It is also observed that electricity demand started rising almost immediately after decline in number of cases and ease of restricting.</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/trend.png" alt="" />
+						</div>
+					</section> -->
+
+
+
+
+
+				<!-- Five -->
+					<!-- <section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Massa sed condimentum</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+						</div> -->
+
+						<!-- Gallery -->
+							<!-- <div class="gallery style2 medium lightbox onscroll-fade-in">
+								<article>
+									<a href="images/gallery/fulls/01.jpg" class="image">
+										<img src="images/gallery/thumbs/01.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/02.jpg" class="image">
+										<img src="images/gallery/thumbs/02.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Feugiat Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/03.jpg" class="image">
+										<img src="images/gallery/thumbs/03.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Amet</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/04.jpg" class="image">
+										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/05.jpg" class="image">
+										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ultrices Magna</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/06.jpg" class="image">
+										<img src="images/gallery/thumbs/06.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Tempus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/07.jpg" class="image">
+										<img src="images/gallery/thumbs/07.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/08.jpg" class="image">
+										<img src="images/gallery/thumbs/08.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Risus</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/09.jpg" class="image">
+										<img src="images/gallery/thumbs/09.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Tempus Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/10.jpg" class="image">
+										<img src="images/gallery/thumbs/10.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Sed Etiam</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/11.jpg" class="image">
+										<img src="images/gallery/thumbs/11.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Magna Lorem</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/12.jpg" class="image">
+										<img src="images/gallery/thumbs/12.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Ipsum Dolor</h3>
+										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+
+					</section> -->
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Conclusion</h2>
+							<p>Our findings are well able to measure the dynamics between number of COVID confirmed cases, people’s changing behaviour and government policies across different states in different time scales Thus we conclude that traditional forecasting methods must be used together with such multi-dimensional analysis to assess the impact the demand of electricity during uncertain times such as COVID-19.</p>
+							<!-- <div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-gem"></span>
+									<h3>Lorem</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-save"></span>
+									<h3>Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-wifi"></span>
+									<h3>Amet</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cog"></span>
+									<h3>Magna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa-paper-plane"></span>
+									<h3>Tempus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Aliquam</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-hashtag"></span>
+									<h3>Morbi</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bolt"></span>
+									<h3>Turpis</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-envelope"></span>
+									<h3>Ultrices</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-leaf"></span>
+									<h3>Risus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section> -->
+							</div>
+						</div>
+					</section>
+
+				<!-- Seven -->
+					<!-- <section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+
+						</div>
+					</section> -->
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<section class="wrapper style1 align-center">
+							<div class="inner">
+								<h2>The Authors</h2>
+	
+						<div class="inner">
+							<div class="image123">
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+								<div class="imgContainer">
+									&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+									<img src="/images/ayaz.png" height="200" width="200">
+									<centre><p>&nbsp; Ayaz Mujawar <a href="https://www.linkedin.com/in/ayaz-a-mujawar/" class="icon brands style2 fa-linkedin-in"><span class="label"></span></a></p></centre>
+									<!-- <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+								</div>
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+								<div class="imgContainer">
+									&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+									<img class="middle-img" src="/images/1.jpeg"/ height="200" width="200"/>
+									<p>Avinash Matani <a href="https://www.linkedin.com/in/avinashmatani/" class="icon brands style2 fa-linkedin-in"><span class="label"></span></a></p>
+								</div>
+								<!-- <div class="imgContainer">
+									 <img src="/images/tv.gif"/ height="200" width="200"/>
+									<p>This is image 3</p>
+								</div> -->
+							</div>
+							<!-- <ul class="icons">
+
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul> -->
+							<!-- <p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
